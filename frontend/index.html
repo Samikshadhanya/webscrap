@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Analytics CSV Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel">
+        <div class="heading">
+          <p class="eyebrow">FBref Team Analytics</p>
+          <h1>Generate football team CSVs fast</h1>
+        </div>
+
+        <form id="analysis-form" class="search-form">
+          <label>
+            Team name
+            <input id="team-name" name="team" type="text" placeholder="Arsenal" minlength="2" required />
+          </label>
+
+          <label>
+            Season
+            <select id="season" name="season" required></select>
+          </label>
+
+          <button id="analyze-button" type="submit">Analyze</button>
+        </form>
+
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="results" aria-labelledby="results-title">
+        <div class="results-header">
+          <h2 id="results-title">Team statistics</h2>
+          <button id="download-button" type="button" disabled>Download CSV</button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <tbody id="stats-table">
+              <tr>
+                <td colspan="2" class="empty-state">Enter a team and season to begin.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
