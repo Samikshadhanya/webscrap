@@ -1,0 +1,21 @@
+{
+  "expires_at": 1780903224.705576,
+  "data": {
+    "team": "Arsenal",
+    "competition": "Premier League",
+    "season": 2025,
+    "matches": 38,
+    "wins": 24,
+    "draws": 8,
+    "losses": 6,
+    "goals_scored": 75,
+    "goals_conceded": 34,
+    "goal_difference": 41,
+    "xg": 72.3,
+    "xga": 35.1,
+    "possession": 58.2,
+    "shots": 600,
+    "shots_on_target": 210,
+    "form": "N/A"
+  }
+}
